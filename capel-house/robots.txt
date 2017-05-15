@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /sitemap.xml
+Allow: /images/
+Allow: /js/
+Allow: /css/
+Disallow: /*?
+Disallow: /?
+Sitemap: https://2reallife.od.ua/sitemap.xml
+
+User-agent: Yandex
+Allow: /
+Allow: /sitemap.xml
+Allow: /images/
+Allow: /js/
+Allow: /css/
+Disallow: /*?
+Disallow: /?
+Host: poligraph.com.ua
+Sitemap: https://2reallife.od.ua/sitemap.xml

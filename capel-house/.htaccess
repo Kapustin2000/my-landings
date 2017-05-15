@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP:SSL} !=1 [NC]
+RewriteRule ^(.*)$ https://2reallife.od.ua/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.2reallife\.od\.ua$ [NC]
+RewriteRule ^(.*)$ http://2reallife.od.ua/$1 [R=301,L]
+
+
+
+
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*(default|index|main)\.(html|php|htm)\ HTTP/ [NC]
+RewriteRule ^(([^/]+/)*)(default|main|index)\.(html|php|htm)$ http://2reallife.od.ua/$1 [L,R=301]
+
+
+redirect 301 /validate.html https://2reallife.od.ua
+redirect 301 /m/ https://2reallife.od.ua
+redirect 301 /showthread.php /
